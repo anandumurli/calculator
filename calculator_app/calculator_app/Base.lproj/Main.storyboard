@@ -124,8 +124,8 @@
                                 <color key="textColor" red="0.67529549870000005" green="0.67529549870000005" blue="0.67529549870000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="v7c-Td-13W">
-                                <rect key="frame" x="27" y="44" width="221.5" height="43"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="v7c-Td-13W">
+                                <rect key="frame" x="27" y="44" width="320.5" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N0-5T-tc9">
@@ -139,7 +139,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQh-ay-jM7">
-                                        <rect key="frame" x="74" y="0.0" width="147.5" height="43"/>
+                                        <rect key="frame" x="78" y="0.0" width="147.5" height="43"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="QMj-DF-Wkt"/>
                                         </constraints>
@@ -147,6 +147,16 @@
                                         <color key="textColor" red="0.58915560229999997" green="0.58915560229999997" blue="0.58915560229999997" alpha="0.99182988559999996" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQY-na-bDe">
+                                        <rect key="frame" x="274.5" y="0.0" width="46" height="43"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" red="0.67529549870000005" green="0.67529549870000005" blue="0.67529549870000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clearPressed:" destination="Vot-tN-sy0" eventType="touchUpInside" id="knr-Vk-Rjw"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -167,6 +177,7 @@
                         <outlet property="operand1" destination="mlR-jX-2ur" id="ynP-5L-4EQ"/>
                         <outlet property="operand2" destination="UGa-Nt-S4m" id="7cB-TK-5od"/>
                         <outlet property="operatorx" destination="iWV-Oi-NN2" id="0qI-sJ-IbY"/>
+                        <outlet property="resultLbl" destination="C3f-Wd-3lZ" id="10r-FC-e1S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDn-TB-XEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
