@@ -15,6 +15,8 @@ class MainVC: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func unwindfromscreen(unwindSegue: UIStoryboardSegue){
+        
+    }
 }
 
